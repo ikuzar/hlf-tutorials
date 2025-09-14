@@ -1,5 +1,5 @@
 # hlf-tutorials
-A collection of **bash scripts** to simplify and speed up the deployment of chaincode in **Hyperledger Fabric** described in the **Tutorials** section. This allows you to quickly go back and re-run the deployment steps again.
+A collection of **bash scripts** to simplify and speed up the deployment of chaincode in **Hyperledger Fabric** described in the **Tutorials** section. This allows you to quickly re-run the deployment steps again.
 
 ## Features
 
@@ -14,7 +14,7 @@ You must read and perform the steps described in **Getting Started - install** s
 Here is the installation choice for this project:
 - Linux
 - Golang 
-- Docker and Docker Compose installed
+- Docker and Docker Compose
 - JQ
 
 ## Getting Started
