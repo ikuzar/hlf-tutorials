@@ -1,5 +1,5 @@
 # hlf-tutorials
-A collection of **bash scripts** to simplify and speed up the deployment of chaincode in **Hyperledger Fabric** described in the **Tutorials** section. This allows you to quickly re-run the deployment steps again.
+A collection of **bash scripts** to simplify and speed up the deployment of chaincode in **Hyperledger Fabric** described in the **Tutorials** section of the offcial website. This allows you to quickly re-run the deployment steps again.
 
 ## Features
 
