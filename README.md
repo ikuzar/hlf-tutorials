@@ -33,13 +33,39 @@ Here is the installation choice for this project:
    - Docker Compose: 1.29.2
    - JQ: jq-1.6
 
-At this stage, I suppose you already installed **Fabric** and **Fabric samples**. You can find the turorial installation here: https://hyperledger-fabric.readthedocs.io/en/release-2.5/install.html
+At this stage, I suppose you already installed **Fabric** and **Fabric samples**. You can find the tutorial installation here: https://hyperledger-fabric.readthedocs.io/en/release-2.5/install.html
    
-2. **Create the working directory**  
+2. **Acess test-network directory**  
 
-   To create the working directory, we need your linux user name and your github ID. If your user name is **toto** and your github ID is **1234567**, then the working directory will be:
-   /home/**toto**/go/src/github.com/**1234567**/fabric-samples/test-network.
-   ```bash
-   mkdir -p /home/toto/go/src/github.com/1234567/fabric-samples/test-network
+   I assume your user name is **toto** and your github ID is **1234567**
    
-IN PROGRESS...
+   ```bash
+   cd /home/toto/go/src/github.com/1234567/fabric-samples/test-network
+   
+3. **clone the project**  
+
+   Now you can clone the project into the **test-network** directory.
+   ```bash 
+   git clone https://github.com/ikuzar/hlf-tutorials.git
+
+  The following steps correspond to **Tutorials > Deploying a smart contract to a channel** part of the tutorials. You can find it here: https://hyperledger-fabric.readthedocs.io/en/release-2.5/deploy_chaincode.html
+
+
+4. **Access working directory**  
+
+   The working directory is **deploying_a_smart_contract_to_a_channel**
+   ```bash
+   cd /home/toto/go/src/github.com/1234567/fabric-samples/test-network/hlf-tutorials/deploying_a_smart_contract_to_a_channel
+   ```
+   
+5. **Create the network**  
+
+   The network include several entities such as organizations, peers, orderer which are operational entities and channel that we can consider as a logical entity. If you already installed these entities and want to delete them before reinstalling, you need to delete the network.
+   ```bash
+   cd /home/toto/go/src/github.com/1234567/fabric-samples/test-network/hlf-tutorials/deploying_a_smart_contract_to_a_channel
+   ./network_delete.sh
+   ```
+
+   If you start from scratch, you can create the network.
+   ```bash
+   ./network_create.sh
