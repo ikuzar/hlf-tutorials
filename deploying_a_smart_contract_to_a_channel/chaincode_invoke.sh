@@ -20,7 +20,9 @@ else
 fi
 
 # Read the set of cars that were created by the chaincode
-if peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
+peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
+ret=$?
+if [ $ret -eq 0 ]
 then
 	echo "$(date): SUCCESSFUL Assets Read"
 else
