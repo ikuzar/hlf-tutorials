@@ -132,6 +132,28 @@ You can check the result by running again this command:
 ./chaincode_approval_check.sh
 ```
 
+9. **Committing the chaincode definition to the channel**
+
+After chaincode definition approval, one organization can commit the chaincode definition to the channel. In our case, we use organization org1.   
+```bash
+./chaincode_commit.sh
+```
+
+You can check wether the commit succeeds with the following command.   
+```bash
+./chaincode_commit_check.sh
+```
+
+10. **Invoke the chaincode**
+
+At this stage, the asset-transfer (basic) chaincode is now ready to be invoked by client applications. Use the following command to create an initial set of assets on the ledger.   
+```bash
+./chaincode_invoke.sh
+```
+
+NEXT STEP IN PROGRESS: **Upgrading a smart contract**    
+
+
 
 
 
